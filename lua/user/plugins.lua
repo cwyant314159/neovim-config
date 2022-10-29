@@ -43,8 +43,10 @@ return packer.startup(function(use)
     
     -- PLUGINS --
     use "wbthomason/packer.nvim"    -- have packer manage itself
-    use "nvim-lua/popup.nvim"       -- Used by other plugins
-    use "nvim-lua/plenary.nvim"     -- Used by other plugins 
+    use "nvim-lua/popup.nvim"       -- used by other plugins
+    use "nvim-lua/plenary.nvim"     -- used by other plugins 
+    use "lunarvim/colorschemes"     -- all the colors!!!
+    use "lunarvim/darkplus.nvim"    -- more dark colors
 
     -- Automatically set up configuration after cloning packer.nvim.
     -- Must remain at the end of all plugins.

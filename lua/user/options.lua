@@ -14,6 +14,7 @@ local options = {
     hlsearch = true,
     ignorecase = true,
     pumheight = 10,
+    termguicolors = true,
 
     -- people that set this to any value greater than 0 are savages
     conceallevel = 0,
@@ -77,3 +78,7 @@ local options = {
 for k, v in pairs(options) do
     vim.opt[k] = v
 end
+
+-- st fix
+vim.cmd [[let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"]]
+vim.cmd [[let &t_8f = "\<Esc>[48;2;%lu;%lu;%lum"]]
