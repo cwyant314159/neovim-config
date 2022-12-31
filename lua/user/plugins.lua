@@ -47,6 +47,7 @@ return packer.startup(function(use)
     use "nvim-lua/plenary.nvim"     -- used by other plugins 
     use "lunarvim/colorschemes"     -- all the colors!!!
     use "lunarvim/darkplus.nvim"    -- more dark colors
+    use "morhetz/gruvbox"           -- gruvbox
 
     -- Automatically set up configuration after cloning packer.nvim.
     -- Must remain at the end of all plugins.

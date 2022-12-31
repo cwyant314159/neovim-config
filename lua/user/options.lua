@@ -14,7 +14,7 @@ local options = {
     hlsearch = true,
     ignorecase = true,
     pumheight = 10,
-    termguicolors = true,
+    --termguicolors = true,
 
     -- people that set this to any value greater than 0 are savages
     conceallevel = 0,
