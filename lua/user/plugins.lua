@@ -42,12 +42,22 @@ packer.init {
 return packer.startup(function(use)
     
     -- PLUGINS --
-    use "wbthomason/packer.nvim"    -- have packer manage itself
-    use "nvim-lua/popup.nvim"       -- used by other plugins
-    use "nvim-lua/plenary.nvim"     -- used by other plugins 
-    use "lunarvim/colorschemes"     -- all the colors!!!
-    use "lunarvim/darkplus.nvim"    -- more dark colors
-    use "morhetz/gruvbox"           -- gruvbox
+    use "wbthomason/packer.nvim"            -- have packer manage itself
+    use "nvim-lua/popup.nvim"               -- used by other plugins
+    use "nvim-lua/plenary.nvim"             -- used by other plugins 
+    use "morhetz/gruvbox"                   -- gruvbox
+    use "hrsh7th/nvim-cmp"                  -- the completion plugin
+    use "hrsh7th/cmp-buffer"                -- buffer completions
+    use "hrsh7th/cmp-path"                  -- path completions
+    use "hrsh7th/cmp-cmdline"               -- command line completions
+    use "hrsh7th/cmp-nvim-lsp"              -- neovim lsp completions
+    use "saadparwaiz1/cmp_luasnip"          -- snippet completions
+    use "L3MON4D3/LuaSnip"                  -- snippet engine
+    use "rafamadriz/friendly-snippets"      -- useful snippets
+    use "neovim/nvim-lspconfig"             -- enable lsp
+    use "williamboman/mason.nvim"           -- language server installer
+    use "williamboman/mason-lspconfig.nvim" -- language server installer
+    use "jose-elias-alvarez/null-ls.nvim"   -- LSP diagnostics and code actions
 
     -- Automatically set up configuration after cloning packer.nvim.
     -- Must remain at the end of all plugins.
